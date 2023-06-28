@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="signin.css">
+  <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+
+  <title>SignIn</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <!-- <form action="" > -->
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input id="email" type="email" >
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input id="password" type="password" >
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me <br>
+                             <a href="forgetpswrd.html">Forget Password?</a></label>
+                      
+                    </div>
+                    <button id="submit-btn" onclick="signIn()">Log in</button>
+                    <!-- <button type="button" id="login" onclick="signIn()"> Log In with google</button> -->
+                    <div class="register">
+                        <p>Don't have an account? <a href="register.html"><u>SignIn</u></a></p>
+                    </div>
+                <!-- </form> -->
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
