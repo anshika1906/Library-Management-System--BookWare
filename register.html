@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="signup.css">
+  <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+  <title>Signup/Register</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <!-- <form action="index2.html"> -->
+                    <h2>Signup/Register</h2>
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <label for="">First Name</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <label for="">Last Name</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email"
+                        name="email"
+                        id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="tel" required>
+                        <label for="">Phone Number</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password"
+                        name="password"
+                        id="password" required>
+                        <label for="password">Password</label>
+                      
+                    </div>
+
+                    <button id="submit-btn" onclick="signUp()">Register</button>
+
+                    <div class="SignIn" id="login">
+                        <p>I have an account <a href="signin.html"><u>LogIn</u></a></p>
+                    </div>
+
+                <!-- </form> -->
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
